@@ -53,12 +53,38 @@ body {
     background-color: burlywood;
 }
 
+#terminal {
+    min-height: 400px;
+    max-height: 500px;
+    padding: 20px;
+    overflow-y: auto;
+    font-family: Consolas, monospace;
+    font-size: 15px;
+}
+
 .terminalline {
     margin-bottom: 8px;
 }
 
-.terminallineprompt {
+.terminalinputline {
     margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.prompttext {
+    white-space: nowrap;
+}
+
+#commandinput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: green;
+    font-family: Consolas, monospace;
+    font-size: 15px;
+    margin-left: 8px;
 }
 
 .cursor {
